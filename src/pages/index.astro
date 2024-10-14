@@ -1,123 +1,306 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import 'aos/dist/aos.css';
+
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
-			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-				fill="url(#paint0_linear_1805_24383)"></path>
-			<defs>
-				<linearGradient
-					id="paint0_linear_1805_24383"
-					x1="247.358"
-					y1="0"
-					x2="247.358"
-					y2="622.479"
-					gradientUnits="userSpaceOnUse"
-				>
-					<stop stop-opacity="0.9"></stop>
-					<stop offset="1" stop-opacity="0.2"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title="Rediseño 1">
+	<header class="bg-white shadow-md fixed w-full z-50 transition-all duration-300" id="navbar">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary flex items-center">
+                    <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
+                    Netelip
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#servicios" class="text-gray-600 hover:text-primary transition">Servicios</a>
+                    <a href="#caracteristicas" class="text-gray-600 hover:text-primary transition">Características</a>
+                    <a href="#testimonios" class="text-gray-600 hover:text-primary transition">Testimonios</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-primary transition">Contacto</a>
+                </div>
+                <a href="#" class="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary-dark transition transform hover:scale-105">Prueba gratis</a>
+            </div>
+        </nav>
+    </header>
+			
+			
+
+			<main>
+				<section id="hero" class="pt-28 pb-20 gradient-bg text-white overflow-hidden">
+					<div class="container mx-auto px-6 relative w-5/6">
+						<div class="flex flex-col md:flex-row items-center">
+							<div class="md:w-3/5 mb-8 md:mb-0 z-20" data-aos="fade-right">
+								<h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Revoluciona tus Comunicaciones Empresariales</h1>
+								<p class="text-xl mb-6 text-gray-900  font-semibold">Descubre el poder de nuestro Conmutador Virtual y lleva tu empresa al siguiente nivel.</p>
+								<div class="flex space-x-4">
+									<a href="#" class="bg-white text-primary px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">Comienza ahora</a>
+									<a href="#" class="border-2 border-white text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-primary transition">Ver demo</a>
+								</div>
+							</div>
+							<div class="md:w-2/5 relative ml-3" data-aos="fade-left">
+								<img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Comunicaciones empresariales" class="rounded-lg shadow-2xl">
+								<div class="absolute -bottom-10 -left-10 bg-white p-4 rounded-lg shadow-xl z-1">
+									<p class="text-primary font-semibold">Más de 10,000 empresas confían en nosotros</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="max-w-5xl mx-auto">
+				<section id="servicios" class="py-20">
+					<div class="container mx-auto px-6">
+						<h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios de Telefonía IP</h2>
+						<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+							<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+								<svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+								<h3 class="text-xl font-semibold mb-2">Línea SIP Avanzada</h3>
+								<p class="text-gray-600">Optimiza tus comunicaciones con nuestra línea telefónica virtual de última generación.</p>
+								<a href="#" class="mt-4 inline-block text-primary font-semibold hover:underline">Saber más →</a>
+							</div>
+							<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+								<svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+								<h3 class="text-xl font-semibold mb-2">Números Virtuales Globales</h3>
+								<p class="text-gray-600">Expande tu presencia internacional con números locales en más de 60 países.</p>
+								<a href="#" class="mt-4 inline-block text-primary font-semibold hover:underline">Saber más →</a>
+							</div>
+							<div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+								<svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+								<h3 class="text-xl font-semibold mb-2">Videoconferencias HD</h3>
+								<p class="text-gray-600">Conecta con tu equipo y clientes mediante videoconferencias de alta calidad.</p>
+								<a href="#" class="mt-4 inline-block text-primary font-semibold hover:underline">Saber más →</a>
+							</div>
+						</div>
+					</div>
+				</section>
+		
+				<section id="caracteristicas" class="py-20 bg-gray-100">
+					<div class="container mx-auto px-6">
+						<h2 class="text-3xl font-bold text-center mb-12">Características Destacadas</h2>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+							<div class="flex items-start" data-aos="fade-right">
+								<div class="flex-shrink-0 mr-4">
+									<div class="bg-primary rounded-full p-3">
+										<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+									</div>
+								</div>
+								<div>
+									<h3 class="text-xl font-semibold mb-2">Integración Perfecta</h3>
+									<p class="text-gray-600">Conecta Netelip con tus herramientas favoritas como Salesforce, HubSpot y más.</p>
+								</div>
+							</div>
+							<div class="flex items-start" data-aos="fade-left">
+								<div class="flex-shrink-0 mr-4">
+									<div class="bg-primary rounded-full p-3">
+										<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+									</div>
+								</div>
+								<div>
+									<h3 class="text-xl font-semibold mb-2">Seguridad Avanzada</h3>
+									<p class="text-gray-600">Protege tus comunicaciones con encriptación de extremo a extremo y autenticación de dos factores.</p>
+								</div>
+							</div>
+							<div class="flex items-start" data-aos="fade-right">
+								<div class="flex-shrink-0 mr-4">
+									<div class="bg-primary rounded-full p-3">
+										<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+									</div>
+								</div>
+								<div>
+									<h3 class="text-xl font-semibold mb-2">Análisis en Tiempo Real</h3>
+									<p  class="text-gray-600">Obtén insights valiosos sobre el rendimiento de tus comunicaciones con nuestro panel de análisis avanzado.</p>
+								</div>
+							</div>
+							<div class="flex items-start" data-aos="fade-left">
+								<div class="flex-shrink-0 mr-4">
+									<div class="bg-primary rounded-full p-3">
+										<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+									</div>
+								</div>
+								<div>
+									<h3 class="text-xl font-semibold mb-2">Escalabilidad Sin Límites</h3>
+									<p class="text-gray-600">Crece sin preocupaciones. Netelip se adapta a tus necesidades, desde startups hasta grandes corporaciones.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+		
+				<section id="testimonios" class="py-20">
+					<div class="container mx-auto px-6">
+						<h2 class="text-3xl font-bold text-center mb-12">Lo que dicen nuestros clientes</h2>
+						<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+							<div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+								<div class="flex items-center mb-4">
+									<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+									<div>
+										<h4 class="font-semibold">María García</h4>
+										<p class="text-gray-600 text-sm">CEO, TechStart</p>
+									</div>
+								</div>
+								<p class="text-gray-600">"Netelip ha transformado completamente nuestras comunicaciones. La calidad del servicio y el soporte son excepcionales."</p>
+							</div>
+							<div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+								<div class="flex items-center mb-4">
+									<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+									<div>
+										<h4 class="font-semibold">Carlos Rodríguez</h4>
+										<p class="text-gray-600 text-sm">Director de IT, MegaCorp</p>
+									</div>
+								</div>
+								<p class="text-gray-600">"La integración de Netelip con nuestros sistemas existentes fue sorprendentemente fácil. Ha mejorado nuestra eficiencia en un 40%."</p>
+							</div>
+							<div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+								<div class="flex items-center mb-4">
+									<img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+									<div>
+										<h4 class="font-semibold">Ana Martínez</h4>
+										<p class="text-gray-600 text-sm">Gerente de Ventas, GloboSales</p>
+									</div>
+								</div>
+								<p class="text-gray-600">"Los números virtuales internacionales de Netelip nos han permitido expandirnos a nuevos mercados con facilidad. ¡Increíble servicio!"</p>
+							</div>
+						</div>
+					</div>
+				</section>
+		
+				<section id="contacto" class="py-20 bg-gray-100">
+					<div class="container mx-auto px-6">
+						<div class="bg-white rounded-lg shadow-xl overflow-hidden">
+							<div class="flex flex-col md:flex-row">
+								<div class="md:w-1/2 p-8" data-aos="fade-right">
+									<h2 class="text-3xl font-bold mb-6">Contáctanos</h2>
+									<p class="text-gray-600 mb-6">¿Tienes preguntas sobre cómo Netelip puede ayudar a tu empresa? Nuestro equipo está listo para asistirte.</p>
+									<form>
+										<div class="mb-4">
+											<label for="name" class="block text-gray-700 font-semibold mb-2">Nombre</label>
+											<input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" required>
+										</div>
+										<div class="mb-4">
+											<label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+											<input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" required>
+										</div>
+										<div class="mb-4">
+											<label for="message" class="block text-gray-700 font-semibold mb-2">Mensaje</label>
+											<textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+										</div>
+										<button type="submit" class="bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-dark transition">Enviar mensaje</button>
+									</form>
+								</div>
+								<div class="md:w-1/2 bg-primary p-8 text-white flex items-center" data-aos="fade-left">
+									<div>
+										<h3 class="text-2xl font-bold mb-4">Información de contacto</h3>
+										<p class="mb-4">Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros utilizando la información a continuación.</p>
+										<div class="flex items-center mb-4">
+											<svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+											<span>+34 900 123 456</span>
+										</div>
+										<div class="flex items-center mb-4">
+											<svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+											<span>info@netelip.com</span>
+										</div>
+										<div class="flex items-center">
+											<svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+											<span>Calle Principal 123, 28001 Madrid, España</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				</div>
+			</main>
+		
+			<footer class="bg-gray-900 text-white py-12">
+				<div class="container mx-auto px-6">
+					<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+						<div>
+							<h3 class="text-lg font-semibold mb-4">Sobre Netelip</h3>
+							<p class="text-gray-400">Netelip es líder en soluciones de comunicación empresarial, ofreciendo servicios innovadores y eficientes para empresas de todos los tamaños.</p>
+						</div>
+						<div>
+							<h3 class="text-lg font-semibold mb-4">Enlaces rápidos</h3>
+							<ul class="space-y-2">
+								<li><a href="#" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+								<li><a href="#servicios" class="text-gray-400 hover:text-white transition">Servicios</a></li>
+								<li><a href="#caracteristicas" class="text-gray-400 hover:text-white transition">Características</a></li>
+								<li><a href="#testimonios" class="text-gray-400 hover:text-white transition">Testimonios</a></li>
+								<li><a href="#contacto" class="text-gray-400 hover:text-white transition">Contacto</a></li>
+							</ul>
+						</div>
+						<div>
+							<h3 class="text-lg font-semibold mb-4">Servicios</h3>
+							<ul class="space-y-2">
+								<li><a href="#" class="text-gray-400 hover:text-white transition">Línea SIP</a></li>
+								<li><a href="#" class="text-gray-400 hover:text-white transition">Números Virtuales</a></li>
+								<li><a href="#" class="text-gray-400 hover:text-white transition">Videoconferencias</a></li>
+								<li><a href="#" class="text-gray-400 hover:text-white transition">Call Center</a></li>
+								<li><a href="#" class="text-gray-400 hover:text-white transition">API de Integración</a></li>
+							</ul>
+						</div>
+						<div>
+							<h3 class="text-lg font-semibold mb-4">Síguenos</h3>
+							<div class="flex space-x-4">
+								<a href="#" class="text-gray-400 hover:text-white transition">
+									<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+								</a>
+								<a href="#" class="text-gray-400 hover:text-white transition">
+									<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+								</a>
+								<a href="#" class="text-gray-400 hover:text-white transition">
+									<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="border-t border-gray-800 mt-8 pt-8 text-center">
+						<p>&copy; 2023. Todos los derechos reservados.</p>
+					</div>
+				</div>
+			</footer>
+			<style>
+				main {
+					background-color: aliceblue;
+				}
+				.gradient-bg {
+					background: linear-gradient(135deg, #0056b3, #00a86b);
+				}
+			</style>
+			<script>
+				import AOS from 'aos';
+				// Espera a que el contenido del DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', (event: Event) => {
+  // Inicializa AOS (Animate On Scroll) con duración de animación de 1000 ms y una sola vez
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+
+  // Selecciona la barra de navegación por su ID
+  const navbar: HTMLElement | null = document.getElementById('navbar');
+
+  // Verifica que la navbar no sea nula antes de añadir el listener
+  if (navbar) {
+    // Añade un listener para el evento de scroll de la ventana
+    window.addEventListener('scroll', () => {
+      // Comprueba la posición de desplazamiento vertical
+      if (window.scrollY > 50) {
+        // Si se ha desplazado más de 50 píxeles, añade clases para cambiar el fondo y el desenfoque
+        navbar.classList.add('bg-white/80', 'backdrop-blur-md');
+        navbar.classList.remove('bg-white');
+      } else {
+        // Si está por debajo de 50 píxeles, restaura el fondo original
+        navbar.classList.remove('bg-white/80', 'backdrop-blur-md');
+        navbar.classList.add('bg-white');
+      }
+    });
+  } else {
+    console.warn('Navbar no encontrada');
+  }
+});
+			</script>
+		
+	
 </Layout>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style>
+
